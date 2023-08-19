@@ -1,0 +1,25 @@
+.categoryContainer{
+    font-size: .9em;
+}
+
+.categoryContainer:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.categoryContainer:not(:first-child){
+    margin-top: .5em;
+}
+
+.categoryContainer:not(:last-child)::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: var(--header-bg-color);
+    margin-top: .5em;
+}
+
+.appliedFilter, .appliedFilter:hover{
+    color: rgb(186, 184, 184);
+    font-weight: 700;
+}

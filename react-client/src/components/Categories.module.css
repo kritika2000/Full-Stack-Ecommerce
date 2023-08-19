@@ -1,0 +1,11 @@
+.categoriesContainer{
+    height: fit-content;
+    box-shadow: 1px 1px 3px 3px rgba(195, 194, 194, 0.3);
+    box-sizing: border-box;
+    padding: 1em;
+    background-color: #FFF;
+}
+
+.categoriesContainer h3{
+    margin-bottom: 1em;
+}

@@ -1,0 +1,29 @@
+.successContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    height: 100%;
+}
+.successContainer h1{
+    text-align: center;
+}
+
+.backButtonContainer{
+    display: flex;
+    align-items: center;
+}
+
+.backButtonContainer button{
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 1em;
+    color: gray;
+}
+
+.backButtonContainer button:hover{
+    text-decoration: underline;
+    transform: scale(1.01);
+}

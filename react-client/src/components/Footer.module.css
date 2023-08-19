@@ -1,0 +1,8 @@
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    font-weight: 900;
+    font-size: 1.1em;
+}

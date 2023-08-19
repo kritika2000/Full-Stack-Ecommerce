@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=IBM+Plex+Serif&display=swap');
+
+:root{
+    --header-bg-color: #E8E2E2;
+    --cart-bg-color: red;
+    --button-color: #7E1717;
+    --button-light-color: #9c5454;
+    --button-gray-color: rgb(236, 233, 233);
+    --button-light-gray-color: rgb(246, 242, 242);
+}
+
+body{
+    font-family: 'IBM Plex Serif', serif;
+    background-color: #fcf9f6;
+}
+
+button{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.App{
+    min-height: 100vh;
+}
+
+.layoutContainer{
+    display: grid;
+    grid-auto-rows: 75px 1fr 75px;
+    min-height: 100vh;
+}
+
+.mainContainer{
+    height: 100%;
+}
+
+.homeMainContainer{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 2em;
+    min-width: 400px;
+    margin: 1em;
+}
+
+.authLayoutContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+    .homeMainContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}

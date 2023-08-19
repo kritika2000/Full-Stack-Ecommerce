@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.loginFormContainer{
+    background-color: var(--header-bg-color);
+    padding: 3em;
+    border-radius: 5px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: .8em;
+    margin-block: 1em;
+}
+
+.loginFormContainer h1{
+    text-align: center;
+}
+
+.loginFormContainer form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .3em;
+}
+
+.loginFormContainer p:last-of-type{
+    align-self: center;
+}
+
+.loginFormContainer p a:last-of-type{
+    margin-left: .4em;
+    color: var(--button-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.loginFormContainer p:last-of-type a:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+form input{
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: .8em .6em;
+}
+
+.error{
+    background-color: rgb(240, 192, 192);
+    border: 1px solid red;
+    border-radius: 3px;
+    padding: .7em 2em;
+    text-align: center;
+    align-self: center;
+    font-weight: 500;
+}
+
+.loginFormContainer button{
+    margin-top: .8em;
+    padding-block: 1em;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8em;
+    background-color: var(--button-color);
+}
+
+.loginFormContainer button:hover{
+    text-decoration: underline;
+    background-color: var(--button-light-color);
+}
+
+@media (max-width: 1600px){
+    .loginFormContainer{
+        width: 500px;
+    }
+}
+
+@media (max-width: 500px){
+    .loginFormContainer{
+        width: 90vw;
+    }
+}

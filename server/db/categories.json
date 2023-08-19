@@ -1,0 +1,21 @@
+[{
+    "id": 1,
+    "label": "Men's Clothing",
+    "value": "mensclothing"
+  },
+  {
+    "id": 2,
+    "label": "Women's Clothing",
+    "value": "womensclothing"
+  },
+  {
+    "id": 3,
+    "label": "Jewelery",
+    "value": "jewelery"
+  },
+  {
+    "id": 4,
+    "label": "Electronics",
+    "value": "electronics"
+  }
+]

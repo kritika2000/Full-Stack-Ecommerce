@@ -1,0 +1,93 @@
+.headerContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--header-bg-color);
+    padding-inline: 1em;
+}
+
+.logo{
+    height: 50%;
+}
+
+.username{
+    margin-left: auto;
+    margin-right: .8em;
+    font-weight: 600;
+    padding-left: 1em;
+    font-size: 1em;
+    text-transform: capitalize;
+    font-style: italic;
+    background-color: var(--header-bg-color);
+    color: #000;
+    border: none;
+    text-decoration: underline;
+    margin-left: auto;
+}
+
+.signInOut{
+    margin-right: 2em;
+    width: 80px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8em;
+    background-color: var(--button-color);
+}
+
+.signInOut:hover{
+    transform: scale(1.02);
+    background-color: var(--button-light-color);
+    text-decoration: underline;
+}
+
+.myOrder{
+    margin-right: 2em;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8em;
+    background-color: var(--button-color);
+}
+
+.myOrder:hover{
+    transform: scale(1.02);
+    background-color: var(--button-light-color);
+    text-decoration: underline;
+}
+
+.cartContainer{
+    position: relative;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.cartContainer .noOfItems{
+    position: absolute;
+    top: 0;
+    left: 23px;
+    background-color: var(--cart-bg-color);
+    height: 18px;
+    width: 18px;
+    border-radius: 18px;
+    color: #FFF;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7em;
+}
+
+.cartIcon{
+    justify-content: center;
+}
+.cartIcon:hover{
+    color: rgba(0, 0, 0, 0.6);
+}

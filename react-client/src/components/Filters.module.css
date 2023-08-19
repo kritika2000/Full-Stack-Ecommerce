@@ -1,0 +1,52 @@
+.filterContainer{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.filterButtons, .clearFilters{
+    border: none;
+    border-radius: 3px;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .7em;
+    background-color: var(--header-bg-color);
+    padding: .8em;
+}
+
+.clearFilters:hover{
+    transform: scale(1.02);
+    text-decoration: underline;
+    background-color: var(--button-light-color);
+}
+
+.filterButtons:hover{
+    background-color: rgb(245, 242, 242);
+}
+
+.clearFilters{
+    background-color: var(--button-color);
+    color: #FFF;
+}
+
+.filterButtons{
+    display: flex;
+    align-items: center;
+}
+.filterButtons svg{
+    margin-left: 2px;
+}
+
+@media (max-width: 1000px){
+    .filterContainer{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 600px){
+    .filterButtons, .clearFilters{
+        font-size: .6em;
+    }
+}

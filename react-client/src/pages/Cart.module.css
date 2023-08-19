@@ -1,0 +1,224 @@
+.container{
+    padding: 1em 1.5em;
+}
+
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+.cartItemContainer, .headerContainer{
+    height: 80px;
+    min-height: fit-content;
+    padding-inline: 1em;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 1em;
+    justify-items: end;
+}
+
+.headerContainer{
+    height: 60px;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.productContainer, .headerContainer p:first-of-type{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    justify-self: start;
+}
+
+.cartInfoContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-right: .5em;
+}
+
+.cartImage{
+    height: 60px;
+    width: 50px;
+}
+
+.cartTitle{
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.cartTitle:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+.removeItem{
+    font-size: .85em;
+    color: gray;
+    font-weight: 500;
+}
+
+.removeItem:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.totalPrice{
+    font-weight: 600;
+}
+
+.quantityContainer input{
+    width: 50px;
+    margin-left: auto;
+    margin-right: 1em;
+    justify-self: center;
+    padding-left: .3em;
+    padding-block: .2em;
+}
+
+.placeOrder{
+    background-color: var(--button-color);
+    color: #FFF;
+    border: none;
+    border-radius: 3px;
+    padding-block: .9em;
+    font-weight: bold;
+    align-self: stretch;
+    margin-top: 1em;
+}
+.placeOrder:hover{
+    text-decoration: underline;
+    background-color: var(--button-light-color);
+    transform: scale(1.02);
+}
+.placeOrder:disabled{
+    background-color: var(--button-light-color);
+}
+
+.hr{
+    border: .2px solid var(--header-bg-color);
+}
+
+.heading{
+    font-size: 2em;
+    text-align: center;
+}
+
+.checkoutContainer{
+    display: flex;
+    margin-block-end: 1em;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: .5em;
+    width: 250px;
+    margin-left: auto;
+}
+
+.backButtonContainer{
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+}
+
+.backButtonContainer button{
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 1em;
+    color: gray;
+}
+
+.backButtonContainer button:hover{
+    text-decoration: underline;
+    transform: scale(1.01);
+}
+
+.totalContainer{
+    font-size: 1.1em;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.totalContainer div:last-of-type{
+    font-weight: 700;
+}
+
+.bottomContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 1em;
+}
+
+.clearCart{
+    background-color: #FFF;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: .7em;
+    align-self: flex-start;
+}
+
+.clearCart:hover{
+    background-color: var(--header-bg-color);
+}
+
+.goToHome{
+    margin-right: 2em;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: .8em;
+    background-color: var(--button-color);
+    margin-top: 1em;
+}
+
+.goToHome:hover{
+    transform: scale(1.02);
+    background-color: var(--button-light-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+    .cartItemContainer{
+        height: fit-content;
+    }
+    .cartTitle, .cartPrice, .removeItem, .totalPrice, .headerContainer p{
+        font-size: .8em;
+    }
+    .checkoutContainer{
+        width: 200px;
+    }
+    .totalContainer{
+        font-size: 1em;
+    }
+    .backButtonContainer button, .clearCart{
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 450px){
+    .cartItemContainer{
+        height: fit-content;
+    }
+    .cartTitle, .cartPrice, .removeItem, .totalPrice, .headerContainer p{
+        font-size: .7em;
+    }
+    .checkoutContainer{
+        width: 180px;
+    }
+    .totalContainer{
+        font-size: .9em;
+    }
+    .backButtonContainer button, .clearCart{
+        font-size: .8em;
+    }
+}
